@@ -202,7 +202,7 @@
                <p class="choices"><img src="static/img/bookandring.jpg" class="picture-choices2">The Lord of the Rings is a film series of three epic fantasy adventure films directed by Peter Jackson, based on the novel written by J. R. R. Tolkien.
                   Set in the fictional world of Middle-earth, the films follow the hobbit Frodo Baggins as he and the Fellowship embark on a quest to destroy the One Ring, 
                   to ensure the destruction of its maker, the Dark Lord Sauron. 
-                  <span id="dots">...</span><span id="more">The Fellowship eventually splits up and Frodo continues the quest with his loyal companion Sam and the treacherous Gollum. 
+                  <span class="dots">...</span><span class="more">The Fellowship eventually splits up and Frodo continues the quest with his loyal companion Sam and the treacherous Gollum. 
                   Meanwhile, Aragorn, heir in exile to the throne of Gondor, along with Legolas, Gimli, Merry, Pippin and the wizard Gandalf, 
                   unite to rally the Free Peoples of Middle-earth in the War of the Ring in order to aid Frodo by weakening Sauron's forces.
                   The three films were shot simultaneously and entirely in Jackson's native New Zealand from 11 October 1999 until 22 December 2000, with pick-up shots done from 2001 to 2004. 
@@ -211,7 +211,7 @@
                   The Lord of the Rings is widely regarded as one of the greatest and most influential film series ever made. 
                   It was a major financial success and is among the highest-grossing film series of all time with over $2.9 billion in worldwide receipts. 
                   Each film was critically acclaimed and heavily awarded, winning 17 out of their 30 Academy Award nominations.</span>
-                  <button onclick="myFunction()" id="myBtn">Read more</button>
+                  <button onclick="myFunction()" class="myBtn">Read more</button>
                </p>
             </div>
             <div class="col-md-4">
@@ -219,12 +219,12 @@
                <p class="welcome"><img src="static/img/got-book.jpg" class="picture-choices2">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones.
                   The show was both produced and filmed in Belfast and elsewhere in the United Kingdom. 
                   Filming locations also included Canada, Croatia, Iceland, Malta, Morocco, and Spain.
-                  <span id="dots">...</span><span id="more">The series premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons.
+                  <span class="dots">...</span><span class="more">The series premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons.
                   Set on the fictional continents of Westeros and Essos, Game of Thrones has several plots and a large ensemble cast and follows several story arcs. 
                   One arc is about the Iron Throne of the Seven Kingdoms and follows a web of alliances and conflicts among the noble dynasties either vying to claim the throne or fighting for independence from it. 
                   Another focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled and is plotting a return to the throne, 
                   while another story arc follows the Night's Watch, a brotherhood defending the realm against the fierce peoples and legendary creatures of the North.</span>
-                  <button onclick="myFunction()" id="myBtn">Read more</button>
+                  <button onclick="myFunction()" class="myBtn">Read more</button>
                </p>
             </div>
             <div class="col-md-4">
@@ -252,9 +252,9 @@
 </html>
 <script>
    function myFunction() {
-   var dots = document.getElementById("dots");
-   var moreText = document.getElementById("more");
-   var btnText = document.getElementById("myBtn");
+   var dots = document.getElementsByClassName("dots");
+   var moreText = document.getElementsByClassName("more");
+   var btnText = document.getElementsByClassName("myBtn");
    
    if (dots.style.display === "none") {
    dots.style.display = "inline";

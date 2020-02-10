@@ -219,9 +219,9 @@ section {
 
 .picture {
     display: block;
-    margin: 20px;
+    margin-bottom: 20px;
     float: left;
-    width: 300px;
+    width: 250px;
     height: 300px;
     padding: 5px;
 }
@@ -282,6 +282,27 @@ button:hover, a:hover {
 }
 
 /*-------------------------------about Section */
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sister3.jpg");
+  height: 80vh;
+  padding-top: 10px;
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text2 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Cinzel";
+}
 
 .picture3 {
   display: block;
@@ -352,35 +373,65 @@ button[type="submit"] {
 
 /*-------------------------------Our Choices*/
 
+body, html {
+  height: 100%;
+  margin: 0;
+ }
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/readingcorner.jpg");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Amiri";
+}
+
 .reading {
     display: block;
     margin: 20px;
     float: center;
-    width: 600px;
-    height: 400px;
+    height: 300px;
     padding: 5px;
 }
 
 .choices {
     font-family: 'Amiri',cursive;
     color: #000000;
-    position: center;
+    position: left;
     text-decoration: none;
     background-color: #ffffff;
-    text-align: justify;
+    text-align: left;
     margin: 50px;
 }
 
 .blank {
     font-family: 'Cinzel',cursive;
-    color: #000000;
+    color: #000;
     position: center;
     text-decoration: none;
-    background-color: #000000;
+    background-color: #000;
     text-align: center;
     margin: 30px;
 }  
 
+.buy {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: 'Cinzel';
+}
+    
 .picture-choices {
     display: block;
     margin: 10px;
@@ -401,6 +452,27 @@ button[type="submit"] {
 
 #more {
     display: none;
+}
+
+/*-------------------------------forum Section */
+
+.hero-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contact.jpg");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text3 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Cinzel";
 }
 
 /*-------------------------------Footer */

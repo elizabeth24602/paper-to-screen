@@ -182,6 +182,15 @@ section {
     background-color: #ffffff;
 }
 
+.hero-image4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cozy.jpg");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -284,7 +293,7 @@ button:hover, a:hover {
 /*-------------------------------about Section */
 
 .hero-image2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sister3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/busbook.jpg");
   height: 80vh;
   padding-top: 10px;
   background-color: #000000;
@@ -373,13 +382,8 @@ button[type="submit"] {
 
 /*-------------------------------Our Choices*/
 
-body, html {
-  height: 100%;
-  margin: 0;
- }
-
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/readingcorner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/book.jpg");
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -457,7 +461,7 @@ body, html {
 /*-------------------------------forum Section */
 
 .hero-image3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contact.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/rippedjeans.jpg");
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;

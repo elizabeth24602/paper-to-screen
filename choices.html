@@ -132,7 +132,7 @@
                <p class="choices"><img src="static/img/lotr.jpg" class="picture-choices">The Lord of the Rings is a film series of three epic fantasy adventure films directed by Peter Jackson, based on the novel written by J. R. R. Tolkien.
                   Set in the fictional world of Middle-earth, the films follow the hobbit Frodo Baggins as he and the Fellowship embark on a quest to destroy the One Ring, 
                   to ensure the destruction of its maker, the Dark Lord Sauron. 
-                  <span id="dots">...</span><span id="more">The Fellowship eventually splits up and Frodo continues the quest with his loyal companion Sam and the treacherous Gollum. 
+                  <span id="Lotrdots">...</span><span id="Lotrmore">The Fellowship eventually splits up and Frodo continues the quest with his loyal companion Sam and the treacherous Gollum. 
                   Meanwhile, Aragorn, heir in exile to the throne of Gondor, along with Legolas, Gimli, Merry, Pippin and the wizard Gandalf, 
                   unite to rally the Free Peoples of Middle-earth in the War of the Ring in order to aid Frodo by weakening Sauron's forces.
                   The three films were shot simultaneously and entirely in Jackson's native New Zealand from 11 October 1999 until 22 December 2000, with pick-up shots done from 2001 to 2004. 
@@ -143,14 +143,14 @@
                   Each film was critically acclaimed and heavily awarded, winning 17 out of their 30 Academy Award nominations.<br>
                   <a class="col-md-4 buy" href="https://www.amazon.co.uk/Middle-Earth-Collection-Extended-Blu-Ray/dp/B01LTHMP46/ref=sr_1_1?crid=18GKWL409N6GB&keywords=lotr+6+film&qid=1581347400&sprefix=lotr+film%2Caps%2C170&sr=8-1">Buy Now</a>
                   </span>
-                  <button onclick="myFunction()" id="myBtn">Read more</button>
+                  <button onclick="myFunction('Lotrdots', 'Lotrmore', 'LotrBtn')" id="LotrBtn">Read more</button>
                </p>
             </div>
             <div class="col-md-4">
                <h4 class="bio">Harry Potter</h4>
                <p class="welcome"><img src="static/img/harrypotter.jpg" class="picture-choices">Harry Potter is a British-American film series based on the eponymous novels by author J. K. Rowling. 
                   The series is distributed by Warner Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows – Part 2 (2011).
-                  <span id="dots">...</span><span id="more">The series was mainly produced by David Heyman, and stars Daniel Radcliffe, Rupert Grint, and Emma Watson as the three leading characters: 
+                  <span id="HPdots">...</span><span id="HPmore">The series was mainly produced by David Heyman, and stars Daniel Radcliffe, Rupert Grint, and Emma Watson as the three leading characters: 
                   Harry Potter, Ron Weasley, and Hermione Granger. 
                   Four directors worked on the series: Chris Columbus, Alfonso Cuarón, Mike Newell, and David Yates. 
                   Michael Goldenberg wrote the screenplay for Harry Potter and the Order of the Phoenix (2007), 
@@ -161,7 +161,7 @@
                   Philosopher's Stone and Deathly Hallows – Part 2 are among the 50 highest-grossing films of all time, 
                   with the latter ranking as the twelfth highest-grossing film, having grossed over $1 billion. 
                   Without inflation adjustment, it is the third highest-grossing film series with $7.7 billion in worldwide receipts.</span>
-                  <button onclick="myFunction()" id="myBtn">Read more</button> 
+                  <button onclick="myFunction('HPdots', 'HPmore', 'HPBtn')" id="HPBtn">Read more</button> 
                </p>
             </div>
             <div class="col-md-4">
@@ -169,7 +169,7 @@
                <p class="welcome"><img src="static/img/thehobbit.jpg" class="picture-choices">The Hobbit is a film series consisting of three high fantasy adventure films directed by Peter Jackson. 
                   They are based on the 1937 novel The Hobbit by J. R. R. Tolkien, with large portions of the trilogy inspired The Return of the King, as well as new material and characters written especially for the films.
                   Together they act as a prequel to Jackson's LOTR. 
-                  <span id="dots">...</span><span id="more">The films are subtitled An Unexpected Journey (2012), The Desolation of Smaug (2013), and The Battle of the Five Armies (2014).
+                  <span id="Hobbitdots">...</span><span id="Hobbitmore">The films are subtitled An Unexpected Journey (2012), The Desolation of Smaug (2013), and The Battle of the Five Armies (2014).
                   The films feature an ensemble cast that also includes James Nesbitt, Ken Stott, Aidan Turner, Dean O'Gorman, Billy Connolly, Graham McTavish, Peter Hambleton, John Callen, Mark Hadlow, Jed Brophy, Adam Brown, William Kircher, Stephen Hunter, Antony Sher, Evangeline Lilly, Lee Pace and Luke Evans, 
                   with several actors reprising their roles from The Lord of the Rings, including Cate Blanchett, Orlando Bloom, Ian Holm, Christopher Lee, Hugo Weaving, Elijah Wood, and Andy Serkis. 
                   The films also feature Manu Bennett, Conan Stevens, John Tui, Sylvester McCoy, Stephen Fry, Ryan Gage, John Bell, Mikael Persbrandt, Barry Humphries, and Lawrence Makoare. 
@@ -182,7 +182,7 @@
                   Despite critics considering the series inferior to its predecessor The Lord of the Rings, it was more successful financially; 
                   The Hobbit trilogy is one of the highest-grossing film series of all time. 
                   It was also nominated for various awards and won several, although not as many as the original trilogy.</span>
-                  <button onclick="myFunction()" id="myBtn">Read more</button>
+                  <button onclick="myFunction('Hobbitdots', Hobbitmore', 'HobbitBtn')" id="HobbitBtn">Read more</button>
                </p>
             </div>
          </div>
@@ -342,10 +342,10 @@
    </body>
 </html>
 <script>
-   function myFunction() {
-   var dots = document.getElementById("dots");
-   var moreText = document.getElementById("more");
-   var btnText = document.getElementById("myBtn");
+   function myFunction(dots, more, btn) {
+   var dots = document.getElementById(dots);
+   var moreText = document.getElementById(more);
+   var btnText = document.getElementById(btn);
    
    if (dots.style.display === "none") {
    dots.style.display = "inline";

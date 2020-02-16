@@ -419,7 +419,7 @@ button[type="submit"] {
     position: left;
     text-decoration: none;
     background-color: #ffffff;
-    text-align: left;
+    text-align: justify;
     margin: 50px;
 }
 

@@ -60,13 +60,17 @@ h1,h2,h4 {
     display: inline-block;
 }
 
-
-
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
 }
 
 /*-------------------------------Heading */
@@ -110,7 +114,7 @@ header {
 
 .webname {
     font-family: 'Cinzel',cursive;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 80px;
     margin: 70px;
     color: #ffffff;
@@ -279,7 +283,7 @@ button {
 
 a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 15px;
   color: black;
 }
 
@@ -454,7 +458,27 @@ button[type="submit"] {
     padding: 5px;
 }
 
-#more {
+#Lotrmore {
+    display: none;
+}
+
+#HPmore {
+    display: none;
+}
+
+#Hobbitmore {
+    display: none;
+}
+
+#TheHobbitmore {
+    display: none;
+}
+
+#GOTmore {
+    display: none;
+}
+
+#Witchermore {
     display: none;
 }
 

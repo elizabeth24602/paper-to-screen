@@ -509,7 +509,7 @@ form {
   font-family: "amiri";
 }
 
-.container {
+.container-forum {
   padding: 20px;
   background-color: #f1f1f1;
 }
@@ -535,6 +535,17 @@ input[type=submit] {
 
 input[type=submit]:hover {
   opacity: 0.8;
+}
+
+/*-------------------------------Contact Section */
+
+.hero-image4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/netflix.jpg");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /*-------------------------------Footer */

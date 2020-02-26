@@ -1,13 +1,20 @@
-<html>
-    <head>
-
-    </head>
-    <body>
+{% extends 'base.html' %}
+{% block content %}
+    <ul class="collapsible" data-collapsible="accordion">
         {% for book in book %}
-            {{book.task_name}}
-            {{book.category_name}}
-            {{book.task_description}}
-            {{book.star_rating}}
+        <li>
+            <div class="collapsible-header">
+
+                <div class=" task_header col s9">
+                    <i class="material-icons">expand_more</i><strong>{{book.task_name}}</strong> - {{book.star_rating}}
+                </div>
+            </div>
+            <div class="collapsible-body">
+                <span>
+                    {{book.task_description}}
+                </span>
+            </div>
+        </li>
         {% endfor %}
-    </body>
-</html>
+    </ul>
+{% endblock %}

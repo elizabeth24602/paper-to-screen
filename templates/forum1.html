@@ -1,9 +1,30 @@
 {% extends 'base.html' %}
 {% block content %}
+         <div class="hero-image3">
+            <div class="hero-text3">
+               <h1 style="font-size:50px">Add a Book</h1>
+               <p>Join in the conversation.</p>
+            </div>
+         </div>
+         
+        <div class="row">
+            <div class="col-md-12">
+               <h5 class="blank">blank line</h5>
+            </div>
+         </div>
+         
+         <div class="container">
     <ul class="collapsible" data-collapsible="accordion">
         {% for book in book %}
         <li>
             <div class="collapsible-header">
+                <div class="col s3">
+                    <i class="material-icons">expand_more</i>
+                    <a class="waves-effect waves-light btn btn_small">Read</a>
+                    <a class="waves-effect waves-light btn btn_small">Watched</a>
+                    <a class="waves-effect waves-light btn btn_small cyan">Edit</a>
+                    
+                </div>
 
                 <div class=" task_header col s9">
                     <i class="material-icons">expand_more</i><strong>{{book.task_name}}</strong> - {{book.star_rating}}
@@ -17,4 +38,29 @@
         </li>
         {% endfor %}
     </ul>
+    </div>
+    
+           <div class="row">
+            <div class="col-md-12">
+               <h5 class="blank">blank line</h5>
+            </div>
+         </div>
+         
+         <form action="/action_page.php">
+            <div class="container-forum">
+               <h2>Subscribe to our Newsletter</h2>
+               <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+            </div>
+            <div class="container" style="background-color:white">
+               <input type="text" placeholder="Name" name="name" required>
+               <input type="text" placeholder="Email address" name="mail" required>
+               <label>
+               <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
+               </label>
+            </div>
+            <div class="container-forum">
+               <input type="submit" value="Subscribe">
+            </div>
+         </form>
+    
 {% endblock %}

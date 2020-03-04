@@ -43,13 +43,30 @@ def insert_book():
     tasks.insert_one(request.form.to_dict())
     return redirect(url_for('get_book'))
     
-@app.route('/edit_task/<task_id>')
-def edit_task(task_id):
-    the_task =  mongo.db.book.find_one({"_id": ObjectId(task_id)})
+@app.route('/edit_book/<book_id>')
+def edit_book(book_id):
+    the_book =  mongo.db.book.find_one({"_id": ObjectId(book_id)})
     all_categories =  mongo.db.categories.find()
-    return render_template('editbook.html', task=the_task,
+    return render_template('editbook.html', book=the_book,
                            categories=all_categories)
-
+                           
+@app.route('/update_book/<book_id>', methods=["POST"])
+def update_book(book_id):
+    tasks = mongo.db.tasks
+    tasks.update( {'_id': ObjectId(book_id)},
+    {
+        'task_name':request.form.get('task_name'),
+        'category_name':request.form.get('category_name'),
+        'task_description': request.form.get('task_description'),
+        'star_rating': request.form.get('star_rating'),
+        'is_urgent':request.form.get('is_urgent')
+    })
+    return redirect(url_for('get_book'))
+    
+@app.route('/delete_book/<book_id>')
+def delete_task(book_id):
+    mongo.db.tasks.remove({'_id': ObjectId(book_id)})
+    return redirect(url_for('get_book'))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

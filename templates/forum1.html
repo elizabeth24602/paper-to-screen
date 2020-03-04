@@ -1,86 +1,84 @@
 {% extends 'base.html' %}
 {% block content %}
-         <div class="row container-fluid">
-            <a class="col-md-12 logo" href="home.html"></a>
-            <div class="col-md-12">
-               <h2 class="welcome-title">Add a Book</h2>
-               <p class="welcome">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </p>
+<div class="row container-fluid">
+   <a class="col-md-12 logo" href="home.html"></a>
+   <div class="col-md-12">
+      <h2 class="welcome-title">Add a Book</h2>
+      <p class="welcome">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+   </div>
+   <div class="col-md-3 inline-item">
+      <img class="picture" src="static/img/haircolour.jpg">
+   </div>
+   <div class="col-md-3 inline-item">
+      <img class="picture" src="static/img/book.jpg">
+   </div>
+   <div class="col-md-3 inline-item">
+      <img class="picture" src="static/img/busbook.jpg">
+   </div>
+   <div class="col-md-3 inline-item">
+      <img class="picture" src="static/img/readingcorner.jpg">
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-12">
+      <h5 class="blank">blank line</h5>
+   </div>
+</div>
+<div class="container">
+   <ul class="collapsible" data-collapsible="accordion">
+      {% for book in book %}
+      <li>
+         <div class="collapsible-header">
+            <div class="col s3">
+               <a class="waves-effect waves-light btn btn_small">Read</a>
+               <a class="waves-effect waves-light btn btn_small">Watched</a>
+               <a href={{url_for('edit_book', book_id=book._id)}} class="waves-effect waves-light btn btn_small cyan">Edit</a>
             </div>
-            <div class="col-md-3 inline-item">
-               <img class="picture" src="static/img/haircolour.jpg">
-            </div>
-            <div class="col-md-3 inline-item">
-               <img class="picture" src="static/img/book.jpg">
-            </div>
-            <div class="col-md-3 inline-item">
-               <img class="picture" src="static/img/busbook.jpg">
-            </div>
-            <div class="col-md-3 inline-item">
-               <img class="picture" src="static/img/readingcorner.jpg">
-            </div>
-         </div>
-        <div class="row">
-            <div class="col-md-12">
-               <h5 class="blank">blank line</h5>
-            </div>
-         </div>
-         
-         <div class="container">
-    <ul class="collapsible" data-collapsible="accordion">
-        {% for book in book %}
-        <li>
-            <div class="collapsible-header">
-                <div class="col s3">
-                    <i class="material-icons">expand_more</i>
-                    <a class="waves-effect waves-light btn btn_small">Read</a>
-                    <a class="waves-effect waves-light btn btn_small">Watched</a>
-                    <a class="waves-effect waves-light btn btn_small cyan">Edit</a>
-                    
-                </div>
-
-                <div class=" task_header col s9">
-                    <i class="material-icons">expand_more</i><strong>{{book.task_name}}</strong> - {{book.star_rating}}
-                </div>
-            </div>
-            <div class="collapsible-body">
-                <span>
-                    {{book.task_description}}
-                </span>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
-    </div>
-    
-           <div class="row">
-            <div class="col-md-12">
-               <h5 class="blank">blank line</h5>
+            <div class=" task_header col s9">
+               <i class="material-icons">expand_more</i><strong>{{book.task_name}}</strong> - {{book.star_rating}}
             </div>
          </div>
-         
-         <form action="/action_page.php">
-            <div class="container-forum">
-               <h2>Subscribe to our Newsletter</h2>
-               <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
-            </div>
-            <div class="container" style="background-color:white">
-               <input type="text" placeholder="Name" name="name" required>
-               <input type="text" placeholder="Email address" name="mail" required>
-               <label>
-               <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
-               </label>
-            </div>
-            <div class="container-forum">
-               <input type="submit" value="Subscribe">
-            </div>
-         </form>
-    
+         <div class="collapsible-body">
+            <span>
+            {{book.task_description}}
+            </span>
+         </div>
+      </li>
+      {% endfor %}
+   </ul>
+</div>
+<div class="container">
+   <div class="row">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Add Book</button>
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-12">
+      <h5 class="blank">blank line</h5>
+   </div>
+</div>
+<form action="/action_page.php">
+   <div class="container-forum">
+      <h2>Subscribe to our Newsletter</h2>
+      <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+   </div>
+   <div class="container" style="background-color:white">
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Email address" name="mail" required>
+      <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
+      </label>
+   </div>
+   <div class="container-forum">
+      <input type="submit" value="Subscribe">
+   </div>
+</form>
 {% endblock %}

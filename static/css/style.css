@@ -537,6 +537,10 @@ input[type=submit]:hover {
   opacity: 0.8;
 }
 
+.addbook {
+    color: #000000;
+}
+
 /*-------------------------------Contact Section */
 
 .hero-image4 {

@@ -186,15 +186,6 @@ section {
     background-color: #ffffff;
 }
 
-.hero-image5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cozy.jpg");
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -296,27 +287,6 @@ button:hover, a:hover {
 
 /*-------------------------------about Section */
 
-.hero-image2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/busbook.jpg");
-  height: 80vh;
-  padding-top: 10px;
-  background-color: #000000;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text2 {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Cinzel";
-}
-
 .picture3 {
   display: block;
   width: 300px;
@@ -385,25 +355,6 @@ button[type="submit"] {
 }
 
 /*-------------------------------Our Choices*/
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/book.jpg");
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Amiri";
-}
 
 .reading {
     display: block;
@@ -483,26 +434,6 @@ button[type="submit"] {
 }
 
 /*-------------------------------forum Section */
-
-.hero-image3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/rippedjeans.jpg");
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text3 {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Cinzel";
-}
-
 body {font-family: "Cinzel";}
 
 form {
@@ -539,37 +470,6 @@ input[type=submit]:hover {
 
 .addbook {
     color: #000000;
-}
-#respond {
-  margin-top: 40px;
-}
-
-#respond input[type='text'],
-#respond input[type='email'], 
-#respond textarea {
-  margin-bottom: 10px;
-  display: block;
-  width: 100%;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-
-  line-height: 1.4em;
-}
-/*-------------------------------Contact Section */
-
-.hero-image4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/netflix.jpg");
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 /*-------------------------------Footer */

@@ -21,6 +21,52 @@ This website is aimed at existing fans and possible new ones. It advertises new 
    
  
 I started off by using Balsamiq to create my wireframes but then moved onto Publisher to create the other pages. This is mainly because I find the layout on Balsamiq easier to use however the colour and font elements on publisher opens more creative avenues.
+I used the following steps with my UX.
+#### UX Design Methods
+
+##### Ethnographic Research
+UX designers use a variety of research methods such as surveys, observations, diary studies, focus groups, and competitive analyses to develop an understanding of users and what motivates them.
+##### Personas, User Scenarios, and Empathy Maps
+These are all common results of ethnographic research: personas are examples of potential end users, user scenarios illustrate the times in their lives where they will use the product, and empathy maps illustrate their feelings towards the product while they are using it.
+##### Customer Journey Maps
+User journey maps are often used to illustrate touch points within a scenario where an end user is interacting with a digital system. Customer journey maps are useful for identifying usability issues across omnichannel experiences.
+##### Wireframes
+Wireframes are the physical blueprints for screens that make up a product. Shown in low fidelity, wireframes help developers create the basic structure for an application before a UI is implemented. They are also a useful tool to put in front of end users in order to validate assumptions about products before they are built
+##### Prototyping
+Prototyping is an essential part of UX design because it helps to visualize how users will experience software before it is developed. There are a variety of prototyping tools available, like InVision, Adobe XD, and Principle. Prototypes can be used to test projects with end users as well as being a means for communicating designs to development teams.
+##### User Testing
+User testing is essential to validating whether or not a user is experiencing an application as designed. Some methods of user testing include A/B testing, eye tracking, heatmaps, and observations and interviews.
+
+#### The Importance of UX Design
+UX design attempts to deliver the right solution, in the right way, at the right time, and delight people when they interact with a digital system. It’s important to engage a skilled UX designer in order to understand the user deeply and optimize digital products based on stakeholder and end user goals.
+UX designers have a knack for stepping into the shoes of others and empathizing with their circumstances—“walk a mile in the user’s shoes”—which gives them the ability to create value in the relationship between brands and consumers.
+At the end of the day, if design is considered an investment in the success of a product, then engaging with a good user experience designer early on is a great way to strengthen that investment for the long term.
+
+#### What is the difference between UX and UI?
+The interface is not the solution. UI (user interface) design generally plays an important role in the work of a UX (user experience) designer, but it is not the only part. Think of it this way: UX design is the journey and the UI is the destination.
+#### What is the UX process?
+The UX design process is the practical application of empathy used to observe, analyze, and evaluate a user's engagement with a digital product. It is a broad field with opportunities to engage in user research, information architecture, content strategy, user testing, prototyping, and more.
+#### What is a user experience (UX) designer?
+A UX designer employs a user-centric approach to problem-solving. After rigorous analysis of business goals and technical feasibility, they conduct user research and design user experiences that ensure that the right solution is delivered in the right way, at the right time, providing optimum user experiences.
+#### What is a heuristic evaluation?
+A heuristic evaluation is used to identify a product’s common usability issues so that they can be resolved, consequently improving user satisfaction and raising the chances of a digital product’s overall success. Typically, a usability expert also performs a heuristic analysis to identify usability issues.
+#### What is an experience map?
+An experience map is a visual representation illustrating a user’s flow within a product or service—their goals, needs, anxieties, expectations—i.e., the experience throughout their interaction with a product. It’s typically laid out on a linear timeline showing touchpoints between the user and the product.
+#### What is a user scenario?
+A user scenario (or use-case scenario) is often used in product development and describes a small story where the user’s tasks, goals, environmental context and technology used is defined in order to come up with the best solution (features and functionality) for an interaction in a digital product.
+
+**Open-ended questions** encourage people to reflect and reveal what’s important for them. They allow people to freely expand on what is comfortable for them, rather than justifying their thoughts. Open-ended questions tend to explore possibilities, feelings, and the reasons why.
+* **Explorative** questions force expansion on new points of view and uncovered areas. Have you thought of…?
+* **Affective** questions reveal people’s feelings about something. How do you feel about…?
+* **Reflective** questions encourage more elaboration. What do you think causes…?
+* **Probing** questions invite a deeper examination. Can you describe how…?
+* **Analytical** questions look for the roots of a problem. What are the causes of…?
+* **Clarifying** questions help align and avoid misunderstandings. So, you mean that..?
+
+**Closed questions** call for specific answers—usually yes or no—or they force the respondent to select an answer from a given set, or to agree or disagree with a statement. Closed questions tend to focus on facts—what, when, where—and are usually easy to answer. For example: “Where were you born? How many miles do you drive a month?”
+
+
+
 
 ### **Features**
 

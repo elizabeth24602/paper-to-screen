@@ -15,16 +15,16 @@
       </p>
    </div>
    <div class="col-md-3 inline-item">
-      <img class="picture" src="static/img/haircolour.jpg">
+      <img src="{{url_for('static', filename='img/haircolour.jpg') }}" class="picture">
    </div>
    <div class="col-md-3 inline-item">
-      <img class="picture" src="static/img/book.jpg">
+      <img src="{{url_for('static', filename='img/book.jpg') }}" class="picture">
    </div>
    <div class="col-md-3 inline-item">
-      <img class="picture" src="static/img/busbook.jpg">
+      <img src="{{url_for('static', filename='img/busbook.jpg') }}" class="picture">
    </div>
    <div class="col-md-3 inline-item">
-      <img class="picture" src="static/img/readingcorner.jpg">
+      <img src="{{url_for('static', filename='img/readingcorner.jpg') }}" class="picture">
    </div>
 </div>
 <div class="row">
@@ -40,7 +40,7 @@
             <div class="col s3">
                <a class="waves-effect waves-light btn btn_small">Read</a>
                <a class="waves-effect waves-light btn btn_small">Watched</a>
-               <a href={{url_for('edit_book', book_id=book._id)}} class="waves-effect waves-light btn btn_small cyan">Edit</a>
+               <a href="{{url_for('edit_book', book_id=book._id)}}" class="waves-effect waves-light btn btn_small cyan">Edit</a>
             </div>
             <div class=" task_header col s9">
                <i class="material-icons">expand_more</i><strong>{{book.task_name}}</strong> - {{book.star_rating}}

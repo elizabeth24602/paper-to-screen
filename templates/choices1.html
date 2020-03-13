@@ -13,16 +13,16 @@
       </p>
    </div>
    <div class="col-md-3 inline-item">
-      <img class="picture" src="static/img/sister3.jpg">
+      <img src="{{url_for('static', filename='img/sister3.jpg') }}" class="picture" alt="sister3">
    </div>
    <div class="col-md-3 inline-item">
-      <img class="picture" src="static/img/keyandmap.jpg">
+      <img src="{{url_for('static', filename='img/keyandmap.jpg') }}" class="picture" alt="keyandmap">
    </div>
    <div class="col-md-3 inline-item">
-      <img class="picture" src="static/img/harry.jpg">
+      <img src="{{url_for('static', filename='img/harry.jpg') }}" class="picture" alt="harry">
    </div>
    <div class="col-md-3 inline-item">
-      <img class="picture" src="static/img/reading.jpg">
+      <img src="{{url_for('static', filename='img/reading.jpg') }}" class="picture" alt="reading">
    </div>
 </div>
 <div class="row">
@@ -38,7 +38,7 @@
 <div class="row">
    <div class="col-md-4">
       <h4 class="bio">LOTR</h4>
-      <p class="choices"><img src="static/img/lotr.jpg" class="picture-choices">The Lord of the Rings is a film series of three epic fantasy adventure films directed by Peter Jackson, based on the novel written by J. R. R. Tolkien.
+      <p class="choices"><img src="{{url_for('static', filename='img/lotr.jpg') }}" class="picture-choices">The Lord of the Rings is a film series of three epic fantasy adventure films directed by Peter Jackson, based on the novel written by J. R. R. Tolkien.
          Set in the fictional world of Middle-earth, the films follow the hobbit Frodo Baggins as he and the Fellowship embark on a quest to destroy the One Ring, 
          to ensure the destruction of its maker, the Dark Lord Sauron. 
          <span id="Lotrdots">...</span><span id="Lotrmore">The Fellowship eventually splits up and Frodo continues the quest with his loyal companion Sam and the treacherous Gollum. 
@@ -57,7 +57,7 @@
    </div>
    <div class="col-md-4">
       <h4 class="bio">Harry Potter</h4>
-      <p class="choices"><img src="static/img/harrypotter.jpg" class="picture-choices">Harry Potter is a British-American film series based on the eponymous novels by author J. K. Rowling. 
+      <p class="choices"><img src="{{url_for('static', filename='img/harrypotter.jpg') }}" class="picture-choices">Harry Potter is a British-American film series based on the eponymous novels by author J. K. Rowling. 
          The series is distributed by Warner Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows – Part 2 (2011).
          <span id="HPdots">...</span><span id="HPmore">The series was mainly produced by David Heyman, and stars Daniel Radcliffe, Rupert Grint, and Emma Watson as the three leading characters: 
          Harry Potter, Ron Weasley, and Hermione Granger. 
@@ -77,7 +77,7 @@
    </div>
    <div class="col-md-4">
       <h4 class="bio">The Hobbit</h4>
-      <p class="choices"><img src="static/img/thehobbit.jpg" class="picture-choices">The Hobbit is a film series consisting of three high fantasy adventure films directed by Peter Jackson. 
+      <p class="choices"><img src="{{url_for('static', filename='img/thehobbit.jpg') }}" class="picture-choices">The Hobbit is a film series consisting of three high fantasy adventure films directed by Peter Jackson. 
          They are based on the 1937 novel The Hobbit by J. R. R. Tolkien, with large portions of the trilogy inspired The Return of the King, as well as new material and characters written especially for the films.
          Together they act as a prequel to Jackson's LOTR. 
          <span id="Hobbitdots">...</span><span id="Hobbitmore">The films are subtitled An Unexpected Journey (2012), The Desolation of Smaug (2013), and The Battle of the Five Armies (2014).
@@ -111,8 +111,8 @@
 </div>
 <div class="row">
    <div class="col-md-4">
-      <h3 class="bio">LOTR</h3>
-      <p class="choices"><img src="static/img/bookandring.jpg" class="picture-choices2">The Lord of the Rings is a film series of three epic fantasy adventure films directed by Peter Jackson, based on the novel written by J. R. R. Tolkien.
+      <h3 class="bio">LOTR</>
+      <p class="choices"><img src="{{url_for('static', filename='img/bookandring.jpg') }}" class="picture-choices2">The Lord of the Rings is a film series of three epic fantasy adventure films directed by Peter Jackson, based on the novel written by J. R. R. Tolkien.
          Set in the fictional world of Middle-earth, the films follow the hobbit Frodo Baggins as he and the Fellowship embark on a quest to destroy the One Ring, 
          to ensure the destruction of its maker, the Dark Lord Sauron. 
          <span id="TheHobbitdots">...</span><span id="TheHobbitmore">The Fellowship eventually splits up and Frodo continues the quest with his loyal companion Sam and the treacherous Gollum. 
@@ -131,7 +131,7 @@
    </div>
    <div class="col-md-4">
       <h3 class="bio">Game of Thrones</h3>
-      <p class="choices"><img src="static/img/got-book.jpg" class="picture-choices2">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones.
+      <p class="choices"><img src="{{url_for('static', filename='img/got-book.jpg') }}" class="picture-choices2">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones.
          The show was both produced and filmed in Belfast and elsewhere in the United Kingdom. 
          Filming locations also included Canada, Croatia, Iceland, Malta, Morocco, and Spain.
          <span id="GOTdots">...</span><span id="GOTmore">The series premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons.
@@ -146,7 +146,7 @@
    </div>
    <div class="col-md-4">
       <h3 class="bio">The Witcher</h3>
-      <p class="choices"><img src="static/img/the-witcher-books.jpg" class="picture-choices2">The Witcher is an American fantasy drama series produced by Lauren Schmidt Hissrich. 
+      <p class="choices"><img src="{{url_for('static', filename='img/the-witcher-books.jpg') }}" class="picture-choices2">The Witcher is an American fantasy drama series produced by Lauren Schmidt Hissrich. 
          It is based on the book series of the same name by Polish writer Andrzej Sapkowski. 
          The first season, consisting of eight episodes, was released on Netflix in its entirety on December 20, 2019. 
          Before the first season had been released, Netflix announced a second eight-episode season, to be released in 2021; 

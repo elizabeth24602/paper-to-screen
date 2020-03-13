@@ -65,7 +65,7 @@ def update_book(book_id):
     
 @app.route('/delete_book/<book_id>')
 def delete_task(book_id):
-    mongo.db.tasks.remove({'_id': ObjectId(book_id)})
+    mongo.db.book.remove({'_id': ObjectId(book_id)})
     return redirect(url_for('get_book'))
 
 if __name__ == '__main__':
